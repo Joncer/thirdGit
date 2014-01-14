@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingRight="8dp">
+    <!-- android:background="@drawable/listpage" > -->
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >	    
+	    <ImageView android:id="@+id/pic"
+	        android:layout_alignParentRight="true"
+	        android:layout_width="100dp"
+	        android:layout_height="75dp"
+	        android:layout_margin="5dp"
+	        android:scaleType="fitXY"
+	        android:contentDescription="@string/app_name" />
+	    <LinearLayout 
+	        android:layout_toLeftOf="@id/pic"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"	        
+	        android:orientation="vertical">
+		    <TextView android:id="@+id/news_title"
+		        android:layout_height="wrap_content"
+		        android:layout_width="fill_parent"
+		        android:text=""
+		        android:maxLines="1"
+		        style="@style/text_25_black"/>
+		    <TextView android:id="@+id/summary"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text=""
+			    android:maxLines="4"
+			    style="@style/text_10_black" />
+	    </LinearLayout>
+    </RelativeLayout> 
+    <TextView android:id="@+id/tag"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="" 
+        android:drawableLeft="@drawable/tag"
+        android:drawablePadding="5dp" 
+        style="@style/text_10_gray"/>
+</LinearLayout>

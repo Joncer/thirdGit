@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/bg_title_bar"
+     >
+
+    <Button
+        android:id="@+id/left_button"
+        style="@style/text_18_ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dip"
+        android:background="@drawable/btn_back"
+        android:clickable="true"
+        android:paddingLeft="20dip"
+        android:paddingRight="16dip"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:text="@string/back"  />
+
+    <Button
+        android:id="@+id/right_button"
+        style="@style/text_18_ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dip"
+        android:background="@drawable/btn_normal"
+        android:clickable="true"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:text=""       
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@id/right_button"
+        android:layout_toRightOf="@id/left_button"
+        android:clickable="false"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text=""
+        android:textAppearance="@style/text_20_ffffff" />
+
+</RelativeLayout>

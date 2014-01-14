@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context=".LoginActivity" >
+
+    <LinearLayout
+        android:id="@+id/layout_avater"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="5dp" >
+        <ImageView 
+            android:id="@+id/avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher"
+            android:contentDescription="@string/app_name"/>
+    </LinearLayout>
+
+    <LinearLayout 
+        android:id="@+id/layout_login"
+        android:layout_below="@id/layout_avater"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/login_input">
+        
+        <LinearLayout 
+            android:id="@+id/layout_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:id="@+id/label_username"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="@string/username"
+                style="@style/login_label_style"
+                />
+            <EditText
+                android:id="@+id/text_username"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+				style="@style/LoginStyle"
+				android:background="@null"
+                />
+        </LinearLayout>
+        
+        <!-- 输入框之间的分割线 -->
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/list_blockbg_divider"
+            android:contentDescription="@string/app_name"
+            />	<!-- 这里应该用background而不是src -->
+        <LinearLayout 
+            android:id="@+id/layout_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <TextView 
+                android:id="@+id/label_password"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                style="@style/login_label_style"
+                android:text="@string/password"/>
+            <EditText 
+                android:id="@+id/text_password"
+                android:inputType="textPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                style="@style/LoginStyle"
+				android:background="@null"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+   <Button 
+            android:id="@+id/btn_login"
+            android:layout_below="@id/layout_login"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_login"
+            style="@style/btn_login_style"
+            android:text="@string/login"/>
+    <LinearLayout 
+        android:id="@+id/layout_login_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:gravity="center"
+		android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:id="@+id/text_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            style="@style/login_link_style"
+            android:text="@string/forget"
+            />
+        <TextView 
+            android:id="@+id/text_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            style="@style/login_link_style"
+            android:text="@string/account"/>
+    </LinearLayout>
+</RelativeLayout>
