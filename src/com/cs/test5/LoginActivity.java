@@ -9,6 +9,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 //这一行注释只是为了测试主分支和开发分支的合并
+//这一行是为了测试fetch和merge的用法
 import com.example.test5.R;
 
 public class LoginActivity extends Activity {
