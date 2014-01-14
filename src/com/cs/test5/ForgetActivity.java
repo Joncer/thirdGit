@@ -7,7 +7,7 @@ import com.example.test5.R.layout;
 import com.example.test5.R.menu;
 
 import android.os.Bundle;
-import android.app.Activity;
+import android.app.Activity; 
 import android.view.Menu; 
 
 public class ForgetActivity extends Activity {
